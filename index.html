@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">          
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type = "text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Calculadora de CORE</h1>
+    Número:
+    <input type="text" id="pantalla" onclick="vaciar()">
+  
+    <h2 id="info" class="grande" title = "Info sobre el número">Info sobre el número</h2>
+    <div class="unitarias">
+      <h3>Operaciones unitarias</h3>  
+      <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
+      <button id="modulo" onclick="mod()">mod</button>
+      <button id="factorial" onclick="fact()">n&excl;</button>
+    </div>
+    <div class="binarias">
+      <h3>Operaciones binarias</h3>  
+      <button id="suma" onclick="add()">&plus;</button>
+      <button id="resta" onclick="resta()">&minus;</button>
+      <button id="multiplicacion" onclick="mul()">&times;</button>
+      <button id="division" onclick="div()">&divide;</button>
+      <button id="resto" onclick="resto()">resto</button>
+      <button id="potencia" onclick="potencia()">x<sup>y</sup></button>
+      <button id="igual" onclick="eq()">&equals;</button>
+    </div>
+    <div class="csv">
+      <h3> Operaciones en formato CSV </h3>
+      <button id="sumatorio" onclick="sumatorio()">&Sigma;x</button>
+      <button id="ordenar" onclick="ordenar()">ordenar</button>
+      <button id="revertir" onclick="revertir()">revertir</button>
+      <button id="quitar" onclick="quitar()">quitar</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
